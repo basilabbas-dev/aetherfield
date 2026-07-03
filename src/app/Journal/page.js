@@ -1,6 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
+import blogs from "./data";
 
 import Navbar from "../components/Navbar";
+
 import image1 from "../assets/Images/journal images/Image (1).png"
 import image2 from "../assets/Images/journal images/Image (2).png"
 import image3 from "../assets/Images/journal images/Image (3).png"
@@ -8,6 +11,7 @@ import image4 from "../assets/Images/journal images/Image (4).png"
 import image5 from "../assets/Images/journal images/Image (5).png"
 import image6 from "../assets/Images/journal images/Image (6).png"
 import image7 from "../assets/Images/journal images/Image (7).png"
+
 
 export default function Journal() {
   return (
@@ -31,110 +35,143 @@ export default function Journal() {
 
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-x-4 gap-y-12">
 
-          <div>
-            <Image
-              src={image2}
-              alt="Article"
-              className="w-full h-[280px] object-cover"
-            />
-            <h3 className="mt-3 text-lg font-semibold">
-              How to Build a Climate-Ready Data Stack
-            </h3>
-            <p className="text-sm text-gray-500 mt-1">
-              Insights • 4 min
-            </p>
-            <p className="mt-2 text-lg text-gray-700">
-              A practical guide for sustainability teams in integrating
-              emissions, waste, and energy data into modern workflows.
-            </p>
-          </div>
+          {blogs.map((blog) => (
+            <Link
+              key={blog.slug}
+              href={`/journal/${blog.slug}`}
+            >
+              <div className="cursor-pointer">
+                <Image
+                  src={blog.image}
+                  alt={blog.title}
+                  className="w-full h-[280px] object-cover"
+                />
 
-          <div>
-            <Image
-              src={image3}
-              alt="Article"
-              className="w-full h-[280px] object-cover"
-            />
-            <h3 className="mt-3 text-lg font-semibold">
-              Sustainability Isn&#39;t a Side Project: Making Impact Operational
-            </h3>
-            <p className="text-sm text-gray-500 mt-1">
-              Strategy • 4 min
-            </p>
-            <p className="mt-2 text-lg text-gray-700">
-              Why climate goals belong in your core roadmap—not just in the annual ESG report.
-            </p>
-          </div>
+                <h3 className="mt-3 text-lg font-semibold">{blog.title}</h3>
 
-          <div>
-            <Image
-              src={image4}
-              alt="Article"
-              className="w-full h-[280px] object-cover"
-            />
-            <h3 className="mt-3 text-lg font-semibold">
-              Inside the Aetherfield Model: How We Turn Data Into Action
-            </h3>
-            <p className="text-sm text-gray-500 mt-1">
-              Insights • 5 min
-            </p>
-            <p className="mt-2 text-lg text-gray-700">
-              A behind-the-scenes look at our platform logic, system architecture,
-              and sustainability reasoning.
-            </p>
-          </div>
+                <p className="text-sm text-gray-500 mt-1">
+                  {blog.category} • {blog.readTime}
+                </p>
 
-          <div>
-            <Image
-              src={image5}
-              alt="Article"
-              className="w-full h-[280px] object-cover"
-            />
-            <h3 className="mt-3 text-lg font-semibold">
-              From Spreadsheets to Systems: The Evolution of Climate Reporting
-            </h3>
-            <p className="text-sm text-gray-500 mt-1">
-              Tooling • 6 min
-            </p>
-            <p className="mt-2 text-lg text-gray-700">
-              Why legacy tools aren&#39;t enough—and what the next generation of reporting looks like.
-            </p>
-          </div>
+                <p className="mt-2 text-lg text-gray-700">{blog.description}</p>
+              </div>
+            </Link>
+          ))}
 
-          <div>
-            <Image
-              src={image6}
-              alt="Article"
-              className="w-full h-[280px] object-cover"
-            />
-            <h3 className="mt-3 text-lg font-semibold">
-              Carbon Accounting: Myths, Models, and Must-Haves
-            </h3>
-            <p className="text-sm text-gray-500 mt-1">
-              Learning • 6 min
-            </p>
-            <p className="mt-2 text-lg text-gray-700">
-              Debunking common assumptions and defining a framework for getting it right.
-            </p>
-          </div>
+          {blogs.map((blog) => (
+            <Link
+              key={blog.slug}
+              href={`/journal/${blog.slug}`}
+            >
+              <div className="cursor-pointer">
+                <Image
+                  src={blog.image}
+                  alt={blog.title}
+                  className="w-full h-[280px] object-cover"
+                />
 
-          <div>
-            <Image
-              src={image7}
-              alt="Article"
-              className="w-full h-[280px] object-cover"
-            />
-            <h3 className="mt-3 text-lg font-semibold">
-              Seeing Clearly: Designing Feedback Loops for Sustainable Growth
-            </h3>
-            <p className="text-sm text-gray-500 mt-1">
-              Strategy • 4 min
-            </p>
-            <p className="mt-2 text-lg text-gray-700">
-              Building responsive systems that keep sustainability strategy adaptive and actionable.
-            </p>
-          </div>
+                <h3 className="mt-3 text-lg font-semibold">{blog.title}</h3>
 
+                <p className="text-sm text-gray-500 mt-1">
+                  {blog.category} • {blog.readTime}
+                </p>
+
+                <p className="mt-2 text-lg text-gray-700">{blog.description}</p>
+              </div>
+            </Link>
+          ))}
+
+          {blogs.map((blog) => (
+            <Link
+              key={blog.slug}
+              href={`/journal/${blog.slug}`}
+            >
+              <div className="cursor-pointer">
+                <Image
+                  src={blog.image}
+                  alt={blog.title}
+                  className="w-full h-[280px] object-cover"
+                />
+
+                <h3 className="mt-3 text-lg font-semibold">{blog.title}</h3>
+
+                <p className="text-sm text-gray-500 mt-1">
+                  {blog.category} • {blog.readTime}
+                </p>
+
+                <p className="mt-2 text-lg text-gray-700">{blog.description}</p>
+              </div>
+            </Link>
+          ))}
+
+          {blogs.map((blog) => (
+            <Link
+              key={blog.slug}
+              href={`/journal/${blog.slug}`}
+            >
+              <div className="cursor-pointer">
+                <Image
+                  src={blog.image}
+                  alt={blog.title}
+                  className="w-full h-[280px] object-cover"
+                />
+
+                <h3 className="mt-3 text-lg font-semibold">{blog.title}</h3>
+
+                <p className="text-sm text-gray-500 mt-1">
+                  {blog.category} • {blog.readTime}
+                </p>
+
+                <p className="mt-2 text-lg text-gray-700">{blog.description}</p>
+              </div>
+            </Link>
+          ))}
+
+          {blogs.map((blog) => (
+            <Link
+              key={blog.slug}
+              href={`/journal/${blog.slug}`}
+            >
+              <div className="cursor-pointer">
+                <Image
+                  src={blog.image}
+                  alt={blog.title}
+                  className="w-full h-[280px] object-cover"
+                />
+
+                <h3 className="mt-3 text-lg font-semibold">{blog.title}</h3>
+
+                <p className="text-sm text-gray-500 mt-1">
+                  {blog.category} • {blog.readTime}
+                </p>
+
+                <p className="mt-2 text-lg text-gray-700">{blog.description}</p>
+              </div>
+            </Link>
+          ))}
+
+          {blogs.map((blog) => (
+            <Link
+              key={blog.slug}
+              href={`/journal/${blog.slug}`}
+            >
+              <div className="cursor-pointer">
+                <Image
+                  src={blog.image}
+                  alt={blog.title}
+                  className="w-full h-[280px] object-cover"
+                />
+
+                <h3 className="mt-3 text-lg font-semibold">{blog.title}</h3>
+
+                <p className="text-sm text-gray-500 mt-1">
+                  {blog.category} • {blog.readTime}
+                </p>
+
+                <p className="mt-2 text-lg text-gray-700">{blog.description}</p>
+              </div>
+            </Link>
+          ))}
         </div>
       </section>
 
