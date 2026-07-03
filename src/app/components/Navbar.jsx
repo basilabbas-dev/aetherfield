@@ -43,7 +43,7 @@ export default function Navbar() {
         <ul className="hidden md:flex items-center gap-8 font-medium text-black">
           <li>
             <Link
-              href="/Journal"
+              href="/journal"
               className="hover:text-gray-600 transition-colors duration-200"
             >
               Journal
@@ -52,7 +52,7 @@ export default function Navbar() {
 
           <li>
             <Link
-              href="/About"
+              href="/about"
               className="hover:text-gray-600 transition-colors duration-200"
             >
               About
@@ -61,7 +61,7 @@ export default function Navbar() {
 
           <li>
             <Link
-              href="/Career"
+              href="/career"
               className="hover:text-gray-600 transition-colors duration-200"
             >
               Career
@@ -87,7 +87,7 @@ export default function Navbar() {
           <ul className="flex flex-col p-6 gap-6 text-lg font-medium">
             <li>
               <Link
-                href="/Journal"
+                href="/journal"
                 onClick={() => setMenuOpen(false)}
                 className="block hover:translate-x-2 transition-transform duration-200"
               >
@@ -97,7 +97,7 @@ export default function Navbar() {
 
             <li>
               <Link
-                href="/About"
+                href="/about"
                 onClick={() => setMenuOpen(false)}
                 className="block hover:translate-x-2 transition-transform duration-200"
               >
@@ -107,7 +107,7 @@ export default function Navbar() {
 
             <li>
               <Link
-                href="/Career"
+                href="/career"
                 onClick={() => setMenuOpen(false)}
                 className="block hover:translate-x-2 transition-transform duration-200"
               >
