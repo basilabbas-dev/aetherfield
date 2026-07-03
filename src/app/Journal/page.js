@@ -4,13 +4,13 @@ import blogs from "./data";
 
 import Navbar from "../components/Navbar";
 
-import image1 from "../assets/Images/journal images/Image (1).png"
-import image2 from "../assets/Images/journal images/Image (2).png"
-import image3 from "../assets/Images/journal images/Image (3).png"
-import image4 from "../assets/Images/journal images/Image (4).png"
-import image5 from "../assets/Images/journal images/Image (5).png"
-import image6 from "../assets/Images/journal images/Image (6).png"
-import image7 from "../assets/Images/journal images/Image (7).png"
+import image1 from "../assets/Images/journal images/Image(1).png"
+import image2 from "../assets/Images/journal images/Image(2).png"
+import image3 from "../assets/Images/journal images/Image(3).png"
+import image4 from "../assets/Images/journal images/Image(4).png"
+import image5 from "../assets/Images/journal images/Image(5).png"
+import image6 from "../assets/Images/journal images/Image(6).png"
+import image7 from "../assets/Images/journal images/Image(7).png"
 
 
 export default function Journal() {
