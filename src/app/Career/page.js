@@ -40,7 +40,7 @@ export default function Career() {
               </div>
 
               <Link
-                href={`/career/${career.slug}`}
+                href={`/Career/${career.slug}`}
                 className="bg-black text-white px-3 py-3 whitespace-nowrap font-medium flex items-center justify-center self-start"
               >
                 {career.slug === "open-application"

@@ -38,7 +38,7 @@ export default function Journal() {
           {blogs.map((blog) => (
             <Link
               key={blog.slug}
-              href={`/journal/${blog.slug}`}
+              href={`/Journal/${blog.slug}`}
             >
               <div className="cursor-pointer">
                 <Image
@@ -61,7 +61,7 @@ export default function Journal() {
           {blogs.map((blog) => (
             <Link
               key={blog.slug}
-              href={`/journal/${blog.slug}`}
+              href={`/Journal/${blog.slug}`}
             >
               <div className="cursor-pointer">
                 <Image
@@ -84,7 +84,7 @@ export default function Journal() {
           {blogs.map((blog) => (
             <Link
               key={blog.slug}
-              href={`/journal/${blog.slug}`}
+              href={`/Journal/${blog.slug}`}
             >
               <div className="cursor-pointer">
                 <Image
@@ -107,7 +107,7 @@ export default function Journal() {
           {blogs.map((blog) => (
             <Link
               key={blog.slug}
-              href={`/journal/${blog.slug}`}
+              href={`/Journal/${blog.slug}`}
             >
               <div className="cursor-pointer">
                 <Image
@@ -130,7 +130,7 @@ export default function Journal() {
           {blogs.map((blog) => (
             <Link
               key={blog.slug}
-              href={`/journal/${blog.slug}`}
+              href={`/Journal/${blog.slug}`}
             >
               <div className="cursor-pointer">
                 <Image
@@ -153,7 +153,7 @@ export default function Journal() {
           {blogs.map((blog) => (
             <Link
               key={blog.slug}
-              href={`/journal/${blog.slug}`}
+              href={`/Journal/${blog.slug}`}
             >
               <div className="cursor-pointer">
                 <Image
