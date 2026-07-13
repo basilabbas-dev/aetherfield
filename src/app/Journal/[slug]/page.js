@@ -30,7 +30,7 @@ export default async function BlogPage({ params }) {
 
       <div className="grid grid-cols-12 gap-20 mt-20">
 
-        <aside className="hidden lg:block lg:col-span-3">
+        <aside className="block lg:hidden lg:col-span-3">
 
           <p className="text-gray-500">
             Published
