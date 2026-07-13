@@ -1,3 +1,17 @@
+export const metadata = {
+  title: "About Us | Aetherfield",
+  description:
+    "Learn about Aetherfield's mission, values, team, and our commitment to helping organizations make data-driven sustainability decisions.",
+  keywords: [
+    "Aetherfield",
+    "About",
+    "Climate Intelligence",
+    "Sustainability",
+    "ESG",
+    "Environmental Data",
+  ],
+};
+
 import Image from "next/image";
 
 import about from "../assets/Images/about1.png";
