@@ -3,7 +3,9 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 
 export default async function BlogPage({ params }) {
+  await new Promise((resolve) => setTimeout(resolve, 3000));
 
+  
   const { slug } = await params;
 
   const blog = blogs.find((item) => item.slug === slug);
