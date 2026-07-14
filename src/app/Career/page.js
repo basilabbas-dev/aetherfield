@@ -1,3 +1,23 @@
+export const metadata = {
+  title: "Careers | Aetherfield",
+  description:
+    "Explore career opportunities at Aetherfield. Join our team and help build innovative climate intelligence solutions for businesses worldwide.",
+  keywords: [
+    "Aetherfield Careers",
+    "Frontend Jobs",
+    "Software Engineer",
+    "UX Designer",
+    "Climate Technology",
+    "Careers",
+    "Jobs",
+  ],
+  authors: [
+    {
+      name: "Aetherfield",
+    },
+  ],
+};
+
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 import careers from "./data";
